@@ -1,13 +1,20 @@
-<div class="wrapper">
-    <!-- xxxx年xx月を表示 -->
-    <h1 id="header"></h1>
-
-    <!-- ボタンクリックで月移動 -->
-    <div id="next-prev-button">
-        <button id="prev" onclick="prev()">‹</button>
-        <button id="next" onclick="next()">›</button>
-    </div>
-
-    <!-- カレンダー -->
-    <div id="calendar"></div>
-</div>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>webカレンダー</title>
+	<link rel="stylesheet" href="base.css">
+	<script src="calendar.java"></script>
+</head>
+<body bgcolor="#c2fff6">
+<body>
+	<div class="wrapper">
+		<h1 id="header"></h1>
+		<div id="next-prev-button">
+			<button id="prev" onclick="prev()">前の月</button>
+			<button id="next" onclick="next()">次の月</button>
+		</div>
+		<div id="calendar"></div>
+	</div>
+</body>
+</html>
