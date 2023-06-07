@@ -2,13 +2,15 @@
 
 /*全体*/
 .wrapper{
-    max-width: 600px;
+    max-width: 1920px;
+    max-height: 1000px;
     margin: 0 auto;
     color: #666;
 }
 #header {
+    text-decoration:underline;
     text-align: center;
-    font-size: 24px;
+    font-size: 32px;
     width: 100%;
     margin: 1rem 0 0;
 }
@@ -19,7 +21,7 @@
     width: 100%;
 }
 table {
-    outline: 2px solid #ddd;
+    outline: 5px solid #96d35f;
     border-collapse: collapse;
     width: 100%;
 }
@@ -27,18 +29,25 @@ th {
     color: #000;
 }
 th, td {
-    outline: 1px solid #ddd;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    outline: 1px solid #96d35f;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
     text-align: center;
 }
 /*日曜日*/
 td:first-child {
+    text-decoration:underline;
     color: red;
 }
 /*土曜日*/
 td:last-child {
+    text-decoration:underline;
     color: blue;
+}
+/*祝日*/
+td:first-child,
+td.holiday{
+    color: red;
 }
 /*前後月の日付*/
 td.disabled {
@@ -46,7 +55,7 @@ td.disabled {
 }
 /*本日*/
 td.today {
-    background-color: #D65E72;
+    background: radial-gradient(#ff007d,#ff0000);
     color: #fff;
 }
 
@@ -55,18 +64,20 @@ td.today {
     position: relative;
 }
 #next-prev-button button{
+    text-decoration:underline;
     cursor: pointer;
-    background: #B78D4A;
+    background: #005d00;
     color: #fff;
-    border: 1px solid #B78D4A;
+    border: 1px solid #00000;
     border-radius: 4px;
     font-size: 1rem;
     padding: 0.5rem 2rem;
     margin: 1rem 0;
 }
 #next-prev-button button:hover{
-    background-color: #D4BB92;
-    border-color: #D4BB92;
+    background-color: #00a000;
+    border-color: #333333;
+    padding: 1rem 2.5rem;
 }
 #prev {
     float: left;
